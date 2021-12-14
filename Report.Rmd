@@ -48,7 +48,7 @@ summary(ds)
 str(ds)
 ds$date<-ymd(ds$date)
 ```
-\
+
 ## What is mean total number of steps taken per day?\
 1. Calculate the total number of steps taken per day\
 ```{r}
@@ -159,6 +159,7 @@ comprs<-c(mean_b4impu,mean_noNA,median_b4impu,median_noNA)
 barplot(comprs,ylim=c(0,12000),col=comprs)
 
 ```
+\
 It turned out that the mean and the median value are increased a little after the imputing of the missing values:\
 Mean before imputing: 9354.23\
 Mean after imputing: 10749.77\
